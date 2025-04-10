@@ -16,6 +16,11 @@ import ForgotPassword from "./pages/ForgotPassword.jsx";
 import ResetPassword from "./pages/ResetPassword.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
 import axios from "./axiosConfig";
+import DisclaimerPage from "./pages/DisclaimerPage.jsx";
+import TermsAndConditionsPage from "./pages/TermsAndConditionsPage.jsx";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage.jsx";
+import AcceptableUsePolicyPage from "./pages/AcceptableUsePolicyPage.jsx";
+import SupportServicePage from "./pages/SupportServicePage.jsx";
 
 const Layout = () => {
   const location = useLocation();
@@ -47,6 +52,11 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: "/", element: <Main /> },  // Головна сторінка
+      { path: "disclaimer", element: <DisclaimerPage />},  // Сторінка з дисклеймером
+      { path: "terms-and-conditions", element: <TermsAndConditionsPage />},  // Сторінка з загальними умовами та положеннями
+      { path: "privacy-policy", element: <PrivacyPolicyPage />},  // Сторінка з політикою конфіденційності
+      { path: "acceptable-use-policy", element: <AcceptableUsePolicyPage />},  // Сторінка з політикою допустимого використання
+      { path: "support-service", element: <SupportServicePage />},  // Сторінка з службою підтримки
       { path: "registrationlogin", element: <RegistrationLogin /> }, // Сторінка реєстрації - входу
       { path: "registration/email", element: <EmailPasswordForm /> }, // Сторінка введення email
       { path: "registration/email-confirmation", element: <EmailConfirmation /> }, // Сторінка підтвердження емейлу

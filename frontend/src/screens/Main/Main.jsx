@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { BodyHyperlink } from "../../components/BodyHyperlink/BodyHyperlink.jsx";
 import { FormButton } from "../../components/FormButton/FormButton.jsx";
 import { Header } from "../../components/Header/Header.jsx";
@@ -237,26 +238,36 @@ export const Main = () => {
           <div className="text-wrapper-29">КОРИСНЕ</div>
 
           <FormButton className="form-button-instance" />
-          <BodyHyperlink className="body-hyperlink-instance" />
+          <a href="/disclaimer">
+            <BodyHyperlink className="body-hyperlink-instance"/>
+          </a>
           <BodyHyperlink className="body-hyperlink-2" text="Сайт МОЗ" />
-          <BodyHyperlink className="body-hyperlink-3" text="Служба підтримки" />
-          <BodyHyperlink
-            className="body-hyperlink-4"
-            text="Політика конфіденційності"
-          />
-          <BodyHyperlink
-            className="body-hyperlink-5"
-            text="Політика допустимого використання"
-          />
-          <BodyHyperlink
-            className="body-hyperlink-6"
-            text={
-              <>
-                Загальні умови <br />
-                та положення
-              </>
-            }
-          />
+          <a href="/support-service">
+            <BodyHyperlink className="body-hyperlink-3" text="Служба підтримки" />
+          </a>
+          <a href="/privacy-policy">
+            <BodyHyperlink
+              className="body-hyperlink-4"
+              text="Політика конфіденційності"
+            />
+          </a>
+          <a href="/acceptable-use-policy">
+            <BodyHyperlink
+              className="body-hyperlink-5"
+              text="Політика допустимого використання"
+            />
+          </a>
+          <a href="/terms-and-conditions">
+            <BodyHyperlink
+              className="body-hyperlink-6"
+              text={
+                <>
+                  Загальні умови <br />
+                  та положення
+                </>
+              }
+            />
+          </a>
           <InstaIcon className="insta-icon" color="#FFFAEE" />
           <Property1Default1 className="tiktok-icon" color="#FFFAEE" />
           <Property1Default className="facebook-icon" color="#FFFAEE" />
