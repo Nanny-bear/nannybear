@@ -1,1 +1,0 @@
-export { InstaIcon } from "./InstaIcon";

@@ -1,7 +1,7 @@
 .form-button {
     height: 46px;
-    width: 417px;
-    
+    max-width: 417px;
+    /*width: 100%;*/
   }
   
   .form-button .overlap-group-2 {

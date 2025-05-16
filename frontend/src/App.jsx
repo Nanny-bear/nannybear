@@ -53,7 +53,6 @@ import NannySchedulePage from "./pages/NannySchedulePage.jsx";
 import ParentProfilePublicPage from "./pages/ParentProfilePublicPage.jsx";
 import ParentSchedulePage from "./pages/ParetnSchedulePage.jsx";
 import axios from "./axiosConfig";
-import About from "./screens/About/About.jsx";
 import DisclaimerPage from "./pages/DisclaimerPage";
 import TermsAndConditionsPage from "./pages/TermsAndConditionsPage.jsx";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage.jsx";
@@ -160,7 +159,6 @@ const router = createBrowserRouter([
       { path: "/privacy", element: <PrivacyPolicyPage />},
       { path: "/terms", element: <TermsAndConditionsPage />},
       { path:"/disclaimer", element: <DisclaimerPage />}, 
-      { path: "/about", element: <About />},
       { path: "*", element: <NotFoundPage /> },
     ],
     errorElement: <NotFoundPage />
