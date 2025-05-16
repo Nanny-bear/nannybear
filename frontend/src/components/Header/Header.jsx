@@ -16,11 +16,11 @@ export const Header = () => {
         />
       </Link>
 
-      <nav className="nav-links">
-        <Hyperlink className="nav-link" style={{ textDecoration: "none" }} text="ПРО НАС" to="/about" />
-        <Hyperlink className="nav-link" text="ВИДИ НЯНЬ" to="/#nanny-types" />
-        <Hyperlink className="nav-link" text="ВІДГУКИ" to="/about" />
-      </nav>
+      <div className="nav-links">
+        <Hyperlink className="nav-link" style={{ textDecoration: "none" }} text="ПРО НАС" to="about" />
+        <Hyperlink className="nav-link" text="ВИДИ НЯНЬ" to="nanny-types" />
+        <Hyperlink className="nav-link" text="ВІДГУКИ" to="reviews" />
+      </div>
 
       <div className="action-buttons">
         <SecondaryButton className="secondary-button" />

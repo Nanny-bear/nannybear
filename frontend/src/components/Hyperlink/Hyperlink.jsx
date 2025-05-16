@@ -2,34 +2,37 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-export const Hyperlink = ({ className = "", text = "ПРО НАС", to, onClick }) => {
-  const isAnchorLink = to && to.startsWith("#");
+export const Hyperlink = ({ className, divClassName, text = "ПРО НАС", to, onClick }) => {
+const scrollToTarget = (id) => {
+  const target = document.getElementById(id);
+  console.log(`Trying to scroll to #${id}`, target, target?.getBoundingClientRect());
+  if (target) {
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+    return true;
+  }
+  return false;
+};
 
-  const handleAnchorClick = (e, target) => {
-    e.preventDefault();
-    const el = document.getElementById(target);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-      window.history.pushState(null, "", `/#${target}`);
+const handleClick = (e) => {
+  e.preventDefault();
+
+  if (to) {
+    if (!scrollToTarget(to)) {
+      // Wait 100ms and try again
+      setTimeout(() => {
+        scrollToTarget(to);
+      }, 100);
     }
-  };
-
-  if (isAnchorLink) {
-    const targetId = to.slice(1);
-    return (
-      <a
-        href={to}
-        className={`hyperlink ${className}`}
-        onClick={(e) => handleAnchorClick(e, targetId)}
-      >
-        {text}
-      </a>
-    );
   }
 
+  if (onClick) {
+    onClick(e);
+  }
+};
+
   return (
-    <Link to={to} className={`hyperlink ${className}`} onClick={onClick}>
-      {text}
+    <Link to={`#${to}`} className={`hyperlink ${className}`} onClick={handleClick}>
+      <div className={`text-wrapper-10 ${divClassName}`}>{text}</div>
     </Link>
   );
 };
