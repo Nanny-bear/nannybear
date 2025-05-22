@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 
-const FindNannyButton = ({ role, id }) => {
+const FindNannyButton = ({ role, id, className }) => {
   const navigate = useNavigate();
 
   const handleFindClick = () => {
@@ -28,7 +28,7 @@ const FindNannyButton = ({ role, id }) => {
 
   return (
     <div className="find-nanny-combined">
-      <button className="find-nanny-btn" onClick={handleFindClick}>
+      <button className={`find-nanny-btn ${className || ''}`} onClick={handleFindClick}>
         ЗНАЙТИ НЯНЮ
       </button>
       <div className="arrow-circle" onClick={handleFindClick}>

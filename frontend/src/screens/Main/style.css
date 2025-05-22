@@ -734,13 +734,6 @@ body {
     height: auto;
   }
 
-  .main .ph {
-    left: 100vw;
-    width: 60.5vw;
-    height: auto;
-    max-height: 90vh;
-  }
-
   .main .overlap-5 {
     left: 20px;
     width: calc(100% - 40px);
@@ -895,7 +888,7 @@ body {
   }
 
   .overlap-9 .baner {
-    width: 85%;
+    width: 100%;
     left: 0;
   }
 }

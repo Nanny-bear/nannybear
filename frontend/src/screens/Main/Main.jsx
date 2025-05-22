@@ -190,7 +190,10 @@ export const Main = () => {
           src="/assets/arrow-4.svg"
         />
 
-        <TypeCard className="type-card-instance" />
+        <TypeCard 
+          className="type-card-instance" 
+          imgSrc="/assets/ILLUSTRATION-03.svg"
+        />
         <TypeCard
           className="type-card-2"
           text="НЯНЯ СУПРОВІД ЗА КОРДОН"
@@ -200,16 +203,19 @@ export const Main = () => {
               під час подорожі.
             </>
           }
+          imgSrc="/assets/ILLUSTRATION-02.svg"
         />
         <TypeCard
           className="type-card-3"
           text="НЯНЯ З ПРОЖИВАННЯМ"
           text1="Щоденний догляд, розвиток, супровід дитини у комфортній атмосфері."
+          imgSrc="/assets/ILLUSTRATION-04.svg"
         />
         <TypeCard
           className="type-card-4"
           text="НЯНЯ ПОГОДИННО"
           text1="Приходить за потреби на декілька годин, коли батькам потрібно."
+          imgSrc="/assets/ILLUSTRATION-08.svg"
         />
         <TypeCard
           className="type-card-5"
@@ -219,11 +225,13 @@ export const Main = () => {
               Догляд, розвиток і підтримка дітей <br />з особливими потребами.
             </>
           }
+          imgSrc="/assets/ILLUSTRATION-06.svg"
         />
         <TypeCard
           className="type-card-6"
           text="НЯНЯ-ДОМОГОСПОДАРКА"
           text1=" Поєднує догляд за дитиною з допомогою по дому."
+          imgSrc="/assets/ILLUSTRATION-07.svg"
         />
         <StatCard
           className="stat-card-2"
