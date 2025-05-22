@@ -35,10 +35,12 @@
   }
   
   .type-card .screenshot {
-    height: 267px;
+    max-height: 267px;
+    height: auto;
     left: 20px;
     position: absolute;
     top: 65px;
-    width: 376px;
+    max-width: 376px;
+    width: 100%;
   }
   

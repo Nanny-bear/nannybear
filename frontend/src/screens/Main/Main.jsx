@@ -1,6 +1,4 @@
 import React from "react";
-// import { BodyHyperlink } from "../../components/BodyHyperlink/BodyHyperlink.jsx";
-// import { FormButton } from "../../components/FormButton/FormButton.jsx";
 import { Header } from "../../components/Header/Header.jsx";
 import { Hyperlink } from "../../components/Hyperlink/Hyperlink.jsx";
 import { Marketing } from "../../components/Marketing/Marketing.jsx";
@@ -34,7 +32,7 @@ export const Main = () => {
             alt="Screenshot"
             src="/assets/Screenshot.png"
           />
-
+          <section  id="reviews">
           <div className="text-wrapper-15">ВІДГУКИ</div>
 
           <div className="rectangle-6" />
@@ -46,19 +44,15 @@ export const Main = () => {
           <MsgCard className="msg-card-3" property1="default" />
           <MsgCard className="msg-card-4" property1="default" />
           <MsgCard className="msg-card-5" property1="default" />
+          </section>
         </div>
 
         <div className="overlap-3">
           <div className="overlap-4">
             <img
-              className="pexels-arina default-img"
+              className="pexels-arina"
               alt="Pexels arina"
               src="/assets/pexels-arina-krasnikova.png"
-            />
-            <img
-              className="pexels-arina ipad-img"
-              alt="iPad"
-              src="/assets/pexels-arina-ipad.png"
             />
 
             <div className="overlap-5">
@@ -71,12 +65,8 @@ export const Main = () => {
                   <div className="rectangle-7" />
 
                   <p className="text-wrapper-17">
-                    ПРОСТО, ШВИДКО <br />
-                    ТА БЕЗ ЗАЙВИХ ЗУСИЛЬ ЗНАЙДІТЬ НЯНЮ ДЛЯ ДИТИНИ. ВЕЛИКИЙ ВИБІР
-                    КАНДИДАТІВ З ДЕТАЛЬНИМИ РЕЗЮМЕ <br />
-                    ТА ВІДГУКАМИ.
+                    ПРОСТО, ШВИДКО ТА БЕЗ ЗАЙВИХ ЗУСИЛЬ ЗНАЙДІТЬ НЯНЮ ДЛЯ ДИТИНИ. ВЕЛИКИЙ ВИБІР КАНДИДАТІВ З ДЕТАЛЬНИМИ РЕЗЮМЕ ТА ВІДГУКАМИ.
                   </p>
-                  <img className="mobile-image" src="/assets/bear-phone.png" alt="Mobile visual"/>
                 </div>
 
                 <div className="overlap-7">
@@ -101,10 +91,12 @@ export const Main = () => {
               <RoundAnimate className="round-animate" />
             </div>
 
-            <div className="text-wrapper-18">ПРО НАС</div>
+            <section id="about">
+              <div className="text-wrapper-18">ПРО НАС</div>
+            </section>
           </div>
 
-          <p className="nanny-bear-2">
+           <p className="nanny-bear-2">
             Nanny Bear – ваш простий і зручний спосіб знайти ідеальну няню!
             <br />
             <br />
@@ -135,15 +127,13 @@ export const Main = () => {
 
               <div className="text-wrapper-21">ЛЮБОВ</div>
 
-              <div className="text-wrapper-22" style={{ fontFamily: 'Princess Diana, sans-serif' }}>&amp;</div>
+              <div className="text-wrapper-22" style={{ fontFamily: 'PrincessDiana, sans-serif' }}>&amp;</div>
 
               <div className="text-wrapper-23">
                 ТУРБОТА
                 <br />
                 БЕЗПЕКА
               </div>
-              
-              <img src="/assets/frame.png" alt="Banner Text" className="banner-text" />
 
               <PropertyDefault className="cta-button" /> {/* first button  */}
             </div>
@@ -192,115 +182,6 @@ export const Main = () => {
           src="/assets/rectangle-123.svg"
         />
 
-        {/* <div className="overlap-10">
-          <div className="rectangle-14" />
-
-          <div className="overlap-wrapper">
-            <div className="overlap-11">
-              <img
-                className="vector-3"
-                alt="Vector"
-                src="/assets/vector-2.svg"
-              />
-
-              <img
-                className="vector-4"
-                alt="Vector"
-                src="/assets/vector-3.svg"
-              />
-
-              <img
-                className="group-2"
-                alt="Group"
-                src="/assets/group@2x.png"
-              />
-
-              <img
-                className="vector-5"
-                alt="Vector"
-                src="/assets/vector-4.svg"
-              />
-
-              <img
-                className="vector-6"
-                alt="Vector"
-                src="/assets/vector-5.svg"
-              />
-            </div>
-          </div>
-
-          <div className="email">ПІДПИСКА НА EMAIL-РОЗСИЛКУ</div>
-
-          <p className="text-wrapper-26">
-            Ваш спокій – наш пріоритет! Нові няні, вигідні пропозиції та
-            практичні поради!
-          </p>
-
-          <p className="text-wrapper-27">
-            v. 1.1.1 © 2025 Nanny Bear. Всі права захищені
-          </p>
-
-          <div className="text-wrapper-28">ІНФОРМАЦІЯ</div>
-
-          <div className="text-wrapper-29">КОРИСНЕ</div>
-
-          <FormButton className="form-button-instance" />
-          <BodyHyperlink className="body-hyperlink-instance" />
-          <BodyHyperlink className="body-hyperlink-2" text="Сайт МОЗ" />
-          <BodyHyperlink className="body-hyperlink-3" text="Служба підтримки" />
-          <BodyHyperlink
-            className="body-hyperlink-4"
-            text="Політика конфіденційності"
-          />
-          <BodyHyperlink
-            className="body-hyperlink-5"
-            text="Політика допустимого використання"
-          />
-          <BodyHyperlink
-            className="body-hyperlink-6"
-            text={
-              <>
-                Загальні умови <br />
-                та положення
-              </>
-            }
-          />
-
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-          <div className="icon-hover insta-icon-wrapper">
-            <img src="/assets/insta-icon.png" alt="Instagram" className="insta-icon default" />
-            <img src="/assets/insta-icon-hover.png" alt="Instagram Hover" className="insta-icon hover" />
-          </div>
-          </a>
-
-          <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
-          <div className="icon-hover tiktok-icon-wrapper">
-            <img src="/assets/tiktok-icon.png" alt="TikTok" className="tiktok-icon default" />
-            <img src="/assets/tiktok-icon-hover.png" alt="TikTok Hover" className="tiktok-icon hover" />
-          </div>
-          </a>
-
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-          <div className="icon-hover facebook-icon-wrapper">
-            <img src="/assets/facebook-icon.png" alt="Facebook" className="facebook-icon default" />
-            <img src="/assets/facebook-icon-hover.png" alt="Facebook Hover" className="facebook-icon hover" />
-          </div>
-          </a>
-
-          <div className="group-wrapper">
-            <div className="div-wrapper">
-              <div className="logo-2">
-                <img
-                  className="ICON-2"
-                  alt="Icon"
-                  src="/assets/LogoNannyBearGrid.png"
-                />
-
-                
-              </div>
-            </div>
-          </div>
-        </div> */}
         <Footer/>
 
         <img
@@ -309,7 +190,10 @@ export const Main = () => {
           src="/assets/arrow-4.svg"
         />
 
-        <TypeCard className="type-card-instance" />
+        <TypeCard 
+          className="type-card-instance" 
+          imgSrc="/assets/ILLUSTRATION-03.svg"
+        />
         <TypeCard
           className="type-card-2"
           text="НЯНЯ СУПРОВІД ЗА КОРДОН"
@@ -319,16 +203,19 @@ export const Main = () => {
               під час подорожі.
             </>
           }
+          imgSrc="/assets/ILLUSTRATION-02.svg"
         />
         <TypeCard
           className="type-card-3"
           text="НЯНЯ З ПРОЖИВАННЯМ"
           text1="Щоденний догляд, розвиток, супровід дитини у комфортній атмосфері."
+          imgSrc="/assets/ILLUSTRATION-04.svg"
         />
         <TypeCard
           className="type-card-4"
           text="НЯНЯ ПОГОДИННО"
           text1="Приходить за потреби на декілька годин, коли батькам потрібно."
+          imgSrc="/assets/ILLUSTRATION-08.svg"
         />
         <TypeCard
           className="type-card-5"
@@ -338,11 +225,13 @@ export const Main = () => {
               Догляд, розвиток і підтримка дітей <br />з особливими потребами.
             </>
           }
+          imgSrc="/assets/ILLUSTRATION-06.svg"
         />
         <TypeCard
           className="type-card-6"
           text="НЯНЯ-ДОМОГОСПОДАРКА"
           text1=" Поєднує догляд за дитиною з допомогою по дому."
+          imgSrc="/assets/ILLUSTRATION-07.svg"
         />
         <StatCard
           className="stat-card-2"
